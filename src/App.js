@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import UserCard from './components/UserCard';
-import axios from 'axios'
+import axios from 'axios';
+import './App.css'
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <div className="myApp">
-      <h1>React</h1>
+      
      {users.map((user, id)=>(
       <UserCard userData={user} key={id}/>
      ))}

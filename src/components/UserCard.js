@@ -1,11 +1,15 @@
 import React from 'react'
-
+import Button from './Button'
+import UserInformation from './UserInformation'
+import './UserCard.css'
 const UserCard = ({userData}) => {
   return (
-    <div>
-
-        <h1>{userData.name}</h1>
-      
+    <div className="userCard">
+        <div className="userInitial">
+            <h1>{userData.name[0]}</h1>
+        </div>
+        <UserInformation userInfo={userData}/>
+        <Button />
     </div>
   )
 }

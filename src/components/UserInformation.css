@@ -1,0 +1,22 @@
+
+
+.userInfo{
+    padding:1.5rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userName{
+ margin: 10px 0 0px 0;
+}
+
+.userUsername{
+   
+    margin-bottom: 10px;
+}
+
+.userWebsite{
+    margin: 10px 0;
+}
