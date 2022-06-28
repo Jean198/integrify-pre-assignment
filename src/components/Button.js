@@ -1,10 +1,20 @@
 import React from 'react'
 import './Button.css'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+    
+  } from "react-router-dom";
+import UserDetailedPage from './UserDetailedPage'
 
-const Button = () => {
+
+const Button = ({userInfo}) => {
+   
   return (
     <div className='button'>
-      <p>MORE DETAILS</p>
+      <Link to={`/UserDetailedPage/${userInfo.id}`} >MORE DETAILS</Link>
     </div>
   )
 }

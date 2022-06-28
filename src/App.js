@@ -1,37 +1,50 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, Fragment} from 'react'
 import UserCard from './components/UserCard';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './components/Home';
+import Error from '././components/Error'
 import axios from 'axios';
 import './App.css'
+import UserDetailedPage from './components/UserDetailedPage';
+
 
 
 function App() {
- const[users, setUsers]=useState([]);
+
+  const[users, setUsers]=useState([]);
 
  
   
- useEffect(()=>{
-
-  let userInfo;
-
-  axios("https://jsonplaceholder.typicode.com/users").then(
-    response=>{
-      userInfo=response.data
-      setUsers(userInfo)
-    })
-
- }, [])
-
-
-
+  useEffect(()=>{
+ 
+   let userInfo;
+ 
+   axios("https://jsonplaceholder.typicode.com/users").then(
+     response=>{
+       userInfo=response.data
+       setUsers(userInfo)
+     })
+ 
+  }, [])
+ 
+ 
   return (
-    <div className="myApp">
+
+    <Router>
       
-     {users.map((user, id)=>(
-      <UserCard userData={user} key={id}/>
-     ))}
-     
+      <Routes>
+        <Route path="/" element={<Home allUsers={users}/>}/>
+          
+       
+        <Route path="/UserDetailedPage/:id" element={<UserDetailedPage allUsers={users}/>}/>
+          
         
-    </div>
+        <Route path="*" element={<Error/>}/>
+        
+
+      </Routes>
+    </Router>
+  
   );
 }
 
