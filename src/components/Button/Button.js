@@ -7,7 +7,7 @@ import {
     Link
     
   } from "react-router-dom";
-import UserDetailedPage from './UserDetailedPage'
+
 
 
 const Button = ({userInfo}) => {

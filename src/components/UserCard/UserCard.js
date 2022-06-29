@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from './Button'
-import UserInformation from './UserInformation'
+import Button from '../Button/Button'
+import UserInformation from '../UserInformation/UserInformation'
 import './UserCard.css'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 

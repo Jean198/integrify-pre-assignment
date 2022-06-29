@@ -1,7 +1,7 @@
 
 import React, {useState, useEffect, Fragment} from 'react';
 import axios from 'axios';
-import UserCard from './UserCard';
+import UserCard from '../UserCard/UserCard';
 import './Home.css'
 
 const Home = ({allUsers}) => {

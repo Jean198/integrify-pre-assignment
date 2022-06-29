@@ -1,11 +1,11 @@
 import React, {useState, useEffect, Fragment} from 'react'
-import UserCard from './components/UserCard';
+
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import Error from '././components/Error'
 import axios from 'axios';
 import './App.css'
-import UserDetailedPage from './components/UserDetailedPage';
+import UserDetailedPage from './components/UserDetailedPage/UserDetailedPage';
 
 
 
