@@ -14,7 +14,7 @@ const Button = ({userInfo}) => {
    
   return (
     <div className='button'>
-      <Link to={`/UserDetailedPage/${userInfo.id}`} >MORE DETAILS</Link>
+      <Link to={`/UserDetailedPage/${userInfo.id}`} className="link">MORE DETAILS</Link>
     </div>
   )
 }

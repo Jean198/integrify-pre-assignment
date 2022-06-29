@@ -11,9 +11,18 @@
   margin-top: 20px;
   transition-duration: 0.4s;
 }
+.link{
+  text-decoration: none;
+  color: white;
+}
 
 .button:hover {
-    background-color: white; /* Green */
+    background-color: #D3D3D3; 
     color: black;
-    border: solid 2px #00BFFF ;
+    /*border: solid 2px #00BFFF ;*/
   }
+
+
+
+  
+

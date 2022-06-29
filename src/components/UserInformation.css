@@ -18,8 +18,13 @@
 .userUsername{
     
     margin-bottom: 10px;
+    font-style: italic;
 }
 
 .userWebsite{
     margin: 10px 0;
+    color:green;
+    font-style: italic;
 }
+
+
