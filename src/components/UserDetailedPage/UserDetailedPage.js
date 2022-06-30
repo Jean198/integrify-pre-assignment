@@ -1,6 +1,7 @@
 import React from 'react'
-import {useParams} from "react-router-dom"
-import './userdetailedpage.css'
+import {useParams, Link} from "react-router-dom"
+import './userdetailedpage.css';
+
 
 const UserDetailedPage = ({allUsers}) => {
 
@@ -33,11 +34,19 @@ const UserDetailedPage = ({allUsers}) => {
 
                 
 
+                
+
             </div>
 
         ))}
+
+    
+      <Link to="/" className="link">
+         <div className='button'>
+            BACK TO HOMEPAGE
+        </div>
+      </Link>
         
-         
     </div>
   );
 };
