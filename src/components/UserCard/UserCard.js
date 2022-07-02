@@ -6,7 +6,6 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 const UserCard = ({userData}) => {
   return (
-
     <div className="userCard">
         <div className="userInitial">
             <h1>{userData.name[0]}</h1>
@@ -16,5 +15,4 @@ const UserCard = ({userData}) => {
     </div>
   )
 }
-
 export default UserCard

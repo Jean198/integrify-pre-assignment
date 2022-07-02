@@ -2,17 +2,11 @@ import React from 'react'
 import {useParams, Link} from "react-router-dom"
 import './userdetailedpage.css';
 
-
 const UserDetailedPage = ({allUsers}) => {
-
     let {id}= useParams();
   return (
     <div className='container'>
-      
-        
-
         {allUsers.filter(user => user.id===parseInt(id)).map((user,index)=>(
-
             <div key={index} >
                 <ul className='upperList'>
                     <li>naem: {user.name}</li>
@@ -29,26 +23,15 @@ const UserDetailedPage = ({allUsers}) => {
                             <li>{user.address.zipcode}</li>
                         </ul>
                     </li>
-
                 </ul>
-
-                
-
-                
-
             </div>
-
         ))}
-
-    
       <Link to="/" className="link">
          <div className='button'>
             BACK TO HOMEPAGE
         </div>
       </Link>
-        
     </div>
   );
 };
-
 export default UserDetailedPage
